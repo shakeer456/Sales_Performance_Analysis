@@ -1,249 +1,267 @@
-📊 Sales Performance Analysis Dashboard (Excel)
+# 📊 Sales Performance Analysis
 
-An interactive Microsoft Excel dashboard built using Pivot Tables, Power Query, Power Pivot (Data Model), DAX Measures, Pivot Charts, Slicers, and Advanced Excel to analyze sales performance across categories, regions, cities, months, and payment modes.
+An interactive **Microsoft Excel Sales Performance Dashboard** built using **Power Query, Power Pivot (Data Model), DAX, Pivot Tables, Pivot Charts, Slicers, and Advanced Excel** to analyze sales performance across categories, regions, cities, monthly trends, and payment methods.
 
-📌 Table of Contents
-Project Overview
-Problem Statement
-Business Objectives
-Dataset Overview
-Tools & Technologies
-Project Workflow
-Data Cleaning & Transformation
-Data Modeling
-DAX Measures
-Dashboard Features
-Key Performance Indicators (KPIs)
-Business Insights
-Recommendations
-Conclusion
-Folder Structure
-📖 Project Overview
+---
 
-Organizations generate thousands of sales transactions every month. However, raw transactional data alone does not provide meaningful business insights.
+## 📸 Dashboard Preview
 
-This project transforms raw sales data into an interactive executive dashboard that enables business stakeholders to monitor sales performance, identify top-performing regions and categories, evaluate customer purchasing behavior, and make data-driven decisions.
+> Add your dashboard screenshot here.
 
-The dashboard is designed for managers, analysts, and business executives who need quick insights without manually analyzing spreadsheets.
+![Dashboard](dashboard.png)
 
-❓ Problem Statement
+---
 
-A retail company wants to monitor its sales performance across different dimensions such as:
+# 📌 Problem Statement
 
-Product Categories
-Cities
-Regions
-Monthly Sales Trends
-Customer Payment Preferences
+Retail businesses generate thousands of sales transactions every month. While the data is available, extracting meaningful business insights from raw Excel sheets is time-consuming and challenging.
 
-The company currently stores data in Excel, making it difficult to answer questions like:
+The business requires an interactive dashboard to answer questions such as:
 
-Which product category generates the highest revenue?
-Which cities contribute the most sales?
-Which region performs best?
-How are sales changing month over month?
-Which payment method is most preferred?
-What are the overall business KPIs?
+- Which product category generates the highest sales?
+- Which cities contribute the most revenue?
+- Which region performs best?
+- How do sales change throughout the year?
+- Which payment method is preferred by customers?
+- What are the key business KPIs?
 
-The objective is to build an interactive Excel dashboard that provides answers to these questions instantly.
+This project addresses these challenges by transforming raw sales data into an interactive Excel dashboard for data-driven decision-making.
 
-🎯 Business Objectives
+---
 
-The dashboard aims to:
+# 🎯 Business Objectives
 
-Monitor total sales performance.
-Track total quantity sold.
-Measure total number of orders.
-Compare category-wise sales.
-Identify top-performing cities.
-Analyze region-wise sales contribution.
-Study monthly sales trends.
-Understand customer payment preferences.
-Enable dynamic filtering using slicers.
-📂 Dataset Overview
+- Monitor overall sales performance.
+- Track total orders and quantity sold.
+- Compare sales across product categories.
+- Analyze regional sales distribution.
+- Identify top-performing cities.
+- Monitor monthly sales trends.
+- Analyze customer payment preferences.
+- Enable interactive filtering using slicers.
 
-The dataset contains transactional sales records with fields such as:
+---
 
-Column
-Order ID
-Order Date
-Category
-Product
-Quantity
-Sales Amount
-City
-Region
-Payment Mode
-Customer
-🛠 Tools & Technologies
-Microsoft Excel
+# 📂 Dataset
+
+The dataset contains transactional sales information with the following attributes:
+
+- Order ID
+- Order Date
+- Customer
+- Product
+- Category
+- Sales
+- Quantity
+- City
+- Region
+- Payment Mode
+
+---
+
+# 🛠 Tools & Technologies
+
+- Microsoft Excel
+- Power Query
+- Power Pivot
+- Data Model
+- DAX
+- Pivot Tables
+- Pivot Charts
+- Slicers
+- Advanced Excel
+- Data Visualization
+
+---
+
+# 🔄 Project Workflow
+
+```text
+Raw Sales Data (.csv)
+        │
+        ▼
 Power Query
-Power Pivot (Data Model)
-DAX
-Pivot Tables
-Pivot Charts
-Slicers
-Conditional Formatting
-GETPIVOTDATA
-Advanced Excel Functions
-🔄 Project Workflow
-Raw Sales Data
-       │
-       ▼
-Power Query
-(Data Cleaning)
-       │
-       ▼
-Data Model
-(Power Pivot)
-       │
-       ▼
+(Data Cleaning & Transformation)
+        │
+        ▼
+Power Pivot
+(Data Model)
+        │
+        ▼
 DAX Measures
-       │
-       ▼
+        │
+        ▼
 Pivot Tables
-       │
-       ▼
+        │
+        ▼
 Pivot Charts
-       │
-       ▼
+        │
+        ▼
 Interactive Dashboard
-🧹 Data Cleaning & Transformation
+```
 
-The dataset was cleaned using Power Query.
+---
 
-Tasks Performed
-Removed duplicate records
-Checked missing values
-Corrected data types
-Standardized text values
-Removed unnecessary columns
-Created Month column
-Loaded cleaned data into the Data Model
-🏗 Data Modeling
+# 🧹 Data Cleaning & Transformation
 
-The cleaned data was loaded into the Excel Data Model using Power Pivot.
+The raw sales dataset was cleaned using **Power Query**.
 
-Benefits of the Data Model:
+### Data Preparation Steps
 
-Handles large datasets efficiently
-Enables DAX calculations
-Improves dashboard performance
-Supports relationships between tables
-Reduces workbook size
-📈 DAX Measures Used
+- Removed duplicate records
+- Handled missing values
+- Corrected data types
+- Standardized text formatting
+- Removed unnecessary columns
+- Created Month field
+- Loaded cleaned data into the Data Model
 
-Examples of measures created:
+---
 
-Total Sales
-Total Sales = SUM(Sales[Amount])
-Total Orders
-Orders = DISTINCTCOUNT(Sales[OrderID])
-Total Quantity
-Quantity Sold = SUM(Sales[Quantity])
+# 🏗 Data Modeling
 
-These measures automatically update based on slicer selections.
+The cleaned dataset was loaded into **Power Pivot (Data Model)** to improve performance and enable advanced calculations using DAX.
 
-📊 Dashboard Features
-Executive KPIs
+### Advantages
 
-Displays:
+- Better performance with large datasets
+- Supports DAX measures
+- Efficient memory usage
+- Dynamic calculations
+- Scalable dashboard design
 
-Total Sales
-Total Quantity Sold
-Total Orders
-Category-wise Sales
+---
 
-Compares revenue generated by:
+# 📊 Dashboard Features
 
-Clothing
-Electronics
-Furniture
-Grocery
+## KPI Cards
 
-Helps identify the highest revenue-generating category.
+- 💰 Total Sales
+- 📦 Total Quantity
+- 🛒 Total Orders
 
-Region-wise Sales
+---
 
-Shows sales contribution from:
+## Category-wise Sales
 
-East
-North
-South
-West
+Compare sales across:
 
-Displayed using a doughnut chart.
+- Clothing
+- Electronics
+- Furniture
+- Grocery
 
-City-wise Sales
+---
 
-Ranks cities based on total sales.
+## Region-wise Sales
 
-Enables management to identify high-performing markets.
+Visualizes sales contribution across:
 
-Monthly Sales Trend
+- East
+- North
+- South
+- West
 
-Displays sales performance from January to December.
+---
 
-Useful for:
+## City-wise Sales
 
-Seasonality analysis
-Growth monitoring
-Forecast planning
-Orders by Payment Mode
+Ranks cities based on sales performance.
+
+---
+
+## Monthly Sales Trend
+
+Shows sales trend from January to December.
+
+---
+
+## Orders by Payment Mode
 
 Analyzes customer payment preferences.
 
-Includes:
+- Card
+- Cash
+- Net Banking
+- UPI
 
-Card
-Cash
-Net Banking
-UPI
+---
 
-Useful for payment infrastructure planning.
+## Interactive Slicers
 
-Interactive Slicers
+Dashboard filters include:
 
-The dashboard includes slicers for:
+- Product Category
+- Region
 
-Product Category
-Region
+---
 
-Users can filter the entire dashboard with a single click.
+# 📈 Key Insights
 
-📌 Key Performance Indicators (KPIs)
-KPI	Value
-Total Sales	$247.73M
-Total Quantity	9,760
-Total Orders	1,215
-📈 Business Insights
-Category Performance
-Grocery generated the highest sales ($67.70M).
-Electronics contributed the lowest sales among the categories displayed.
-Regional Analysis
-North region accounted for the largest share of sales.
-East and West regions contributed similar proportions.
-City Analysis
-Chennai recorded the highest sales.
-Kolkata generated the lowest sales among the listed cities.
-Sales Trend
-Sales showed fluctuations throughout the year.
-November achieved the highest monthly sales ($26.67M).
-March recorded the lowest sales.
-Payment Analysis
-UPI was the most preferred payment mode.
-Card payments were the least used.
-💡 Recommendations
-Increase inventory for high-performing categories like Grocery.
-Investigate reasons for lower Electronics sales and consider promotional campaigns.
-Focus marketing efforts on underperforming cities to improve sales.
-Prepare inventory and staffing for months with peak demand.
-Expand digital payment infrastructure to support growing UPI usage.
-Analyze customer behavior in lower-performing regions to identify growth opportunities.
-✅ Conclusion
+- Grocery generated the highest sales.
+- Chennai recorded the highest city-wise sales.
+- North region contributed the largest share of sales.
+- November recorded the highest monthly sales.
+- UPI was the most preferred payment method.
 
-This Excel Sales Performance Dashboard converts raw transactional data into actionable business insights through interactive visualizations and dynamic filtering.
+---
 
-By combining Power Query for data preparation, Power Pivot for modeling, DAX for calculations, and Pivot Tables, Charts, and Slicers for visualization, the solution enables stakeholders to quickly evaluate sales performance, identify trends, compare regions and product categories, and make informed business decisions.
+# 💡 Business Recommendations
 
-The dashboard demonstrates how Microsoft Excel can serve as a powerful business intelligence tool for creating professional, interactive reporting solutions without requiring specialized BI software.
+- Increase inventory for high-performing product categories.
+- Improve marketing efforts in low-performing cities.
+- Promote products with lower sales through discounts and campaigns.
+- Prepare inventory before peak sales months.
+- Expand digital payment support due to increasing UPI adoption.
+
+---
+
+# ✅ Conclusion
+
+This project demonstrates how Microsoft Excel can be used as a Business Intelligence tool by combining **Power Query**, **Power Pivot**, **DAX**, **Pivot Tables**, and **Interactive Dashboards**.
+
+The dashboard enables stakeholders to monitor KPIs, identify business trends, evaluate regional performance, and make informed decisions through dynamic filtering and visualization.
+
+---
+
+# 📁 Project Structure
+
+```text
+Sales Performance Analysis/
+│
+├── Dashboard/
+│   └── sales_performance.xlsx
+│
+├── Dataset/
+│   └── sales_raw_data.csv
+│
+└── README.md
+```
+
+---
+
+# ⭐ Skills Demonstrated
+
+- Microsoft Excel
+- Advanced Excel
+- Power Query
+- Power Pivot
+- Data Modeling
+- DAX
+- Pivot Tables
+- Pivot Charts
+- Interactive Dashboard Development
+- Data Cleaning
+- Business Analysis
+- Sales Analytics
+- Data Visualization
+
+---
+
+## 👤 Author
+
+**Shakeer Shaik**
+
+- 💼 Data Analyst
+- 🐍 Python | SQL | Power BI | Excel | DAX
+- 📊 Data Analytics & Business Intelligence
