@@ -6,7 +6,7 @@ An interactive **Microsoft Excel Sales Performance Dashboard** built using **Pow
 
 ## 📸 Dashboard Preview
 
-![Dashboard](Images/dashboard.png)
+![Dashboard](https://github.com/shakeer456/Sales_Performance_Analysis/blob/main/Images/Screenshot%202026-07-23%20133925.png?raw=true))
 ---
 
 # 📌 Problem Statement
