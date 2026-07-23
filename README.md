@@ -228,13 +228,16 @@ The dashboard enables stakeholders to monitor KPIs, identify business trends, ev
 # 📁 Project Structure
 
 ```text
-Sales Performance Analysis/
+Sales_Performance_Analysis/
 │
 ├── Dashboard/
 │   └── sales_performance.xlsx
 │
 ├── Dataset/
 │   └── sales_raw_data.csv
+│
+├── Images/
+│   └── dashboard.png
 │
 └── README.md
 ```
