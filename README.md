@@ -6,10 +6,6 @@ An interactive **Microsoft Excel Sales Performance Dashboard** built using **Pow
 
 ## 📸 Dashboard Preview
 
-> Add your dashboard screenshot here.
-
-## 📸 Dashboard Preview
-
 ![Dashboard](Images/dashboard.png)
 ---
 
